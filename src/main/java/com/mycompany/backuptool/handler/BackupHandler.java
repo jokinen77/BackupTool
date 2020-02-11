@@ -113,6 +113,7 @@ public class BackupHandler {
     private boolean isExcluded(File path) {
         for (String exclude : this.configures.getExcludeDirs()) {
             if (path.getName().matches(exclude) || path.getAbsolutePath().toString().matches(exclude)) {
+                logger.info("Excluding file: " + path.getAbsolutePath());
                 return true;
             }
         }

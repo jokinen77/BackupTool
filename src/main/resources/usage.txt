@@ -23,5 +23,6 @@ forceReplaceExisting = <true/false>
 copyOnlyToArrowTarget = <true/false>
     - If true, then copies the source file only to arrow target if it is defined, otherwise copies it also to default target directories. Default true.
 exclude = <name of directory or file>
-    - Excludes files or directories matching that string. String have to match to the source file's name or absolute path.
-    - Supports "*" (any) regex.
+    - Excludes files or directories matching that string.
+    - The string must match to the source file's name or absolute path or some subdirectory of the source.
+    - Supports Java regex (https://www.vogella.com/tutorials/JavaRegularExpressions/article.html).

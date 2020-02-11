@@ -50,7 +50,7 @@ public class BackupConfigureLoader {
                     sources.add(source);
                 }
             } else if (variable.equals("exclude")) {
-                excluded.add(value.replaceAll("\\*", "(.*)"));
+                excluded.add(value);
             } else {
                 extraConfs.put(variable, value);
             }
